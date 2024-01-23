@@ -1,9 +1,9 @@
 import { Button, Divider, Image, Card, CardHeader, useDisclosure, ModalContent, ModalHeader, ModalBody, ModalFooter, Modal } from "@nextui-org/react";
 import { useContext } from "react";
-import { CartContext } from "../../contexts/CartContext";
+import { CartContext, useCart } from "../../contexts/CartContext";
 
 export default function ProductCard({ product }) {
-    const [cart, setCart] = useContext(CartContext);
+    const { cart, setCart } = useCart();
 
     const addToCart = () => {
         console.log('Add to cart: ' + product.title);
