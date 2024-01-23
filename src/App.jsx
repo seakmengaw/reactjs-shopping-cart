@@ -124,7 +124,7 @@ function App() {
             </div>
           </div>
           <div className="basis-3/4">
-            <h3 className='flex justify-start'>{products.length} Product(s) found</h3>
+            <h3 className='flex justify-start'>{allProducts.length} Product(s) found</h3>
             <div className='flex flex-wrap gap-y-4 gap-x-2 justify-center'>
               {
                 products.map(product => {
